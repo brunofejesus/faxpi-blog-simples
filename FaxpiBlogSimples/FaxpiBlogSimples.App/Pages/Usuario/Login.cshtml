@@ -1,0 +1,24 @@
+﻿@page
+@model FaxpiBlogSimples.App.Pages.Usuario.LoginModel
+
+@{
+  ViewData["Title"] = "Login";
+}
+
+
+<h1>Login</h1>
+
+<form method="post">
+  <div asp-validation-summary="All" class="text-danger"></div>
+  <div class="form-group">
+    <label asp-for="Comando.NomeDeUsuario"></label>
+    <input asp-for="Comando.NomeDeUsuario" class="form-control" />
+    <span asp-validation-for="Comando.NomeDeUsuario" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Comando.Senha"></label>
+    <input asp-for="Comando.Senha" class="form-control" type="password" value="123456" />
+    <span asp-validation-for="Comando.Senha" class="text-danger"></span>
+  </div>
+  <button type="submit" class="btn btn-primary mt-2">Login</button>
+</form>

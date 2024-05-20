@@ -1,0 +1,41 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@model FaxpiBlogSimples.App.Pages.Blog.IndexModel
+@{
+}
+
+@attribute [Authorize]
+
+
+<h1>Bem vindo - Painel</h1>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <h2>Menu</h2>
+      <ul>
+        <li>
+          <a class="btn btn-primary" href="/Blog/CriarPostagem">Criar postagem</a>
+        </li>
+        <li class="mt-2">
+          <a class="btn btn-primary" href="/Usuario/Logout">Sair</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-8">
+      <h2>Postagens</h2>
+      @foreach (var item in Model.Postagens)
+      {
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">@item.Titulo</h5>
+            <p class="card-text">@item.Conteudo</p>
+            <a class="card-link" asp-page="/Blog/EditarPostagem" asp-route-id="@item.PostagemId">Editar</a>
+            <a class="card-link" asp-page="/Blog/ExcluirPostagem" asp-route-id="@item.PostagemId">Excluir</a>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

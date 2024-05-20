@@ -1,0 +1,37 @@
+version: '3.4'
+
+networks:
+  faxpi-blog-simples-dev:
+    driver: bridge
+
+services:
+  faxpiblogsimples.app:
+    image: ${DOCKER_REGISTRY-}faxpiblogsimplesapp
+    build:
+      context: .
+      dockerfile: FaxpiBlogSimples.App/Dockerfile
+    depends_on:
+      - postgres_image
+    ports:
+      - "5000:8090"
+    expose:
+      - 5000
+      - 8090
+    environment:
+      ConnectionStrings__DefaultConnection: "host=postgres_image;Port=5432;Database=faxpi-blog-simples;User Id=postgres;Password=kdi4BU0ZQuI8rplv;"
+    networks:
+      - faxpi-blog-simples-dev
+  postgres_image:
+    image: postgres:latest
+    ports:
+      - "5432"
+    volumes:
+      - faxpi_blog_simples_volume:/var/lib/postgressql/data
+    environment:
+          POSTGRES_USER: "postgres"
+          POSTGRES_PASSWORD: "kdi4BU0ZQuI8rplv"
+          POSTGRES_DB: "faxpi-blog-simples"
+    networks:
+          - faxpi-blog-simples-dev
+volumes:
+  faxpi_blog_simples_volume:

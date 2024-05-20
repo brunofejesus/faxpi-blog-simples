@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaxpiBlogSimples.Nucleo", "FaxpiBlogSimples.Nucleo\FaxpiBlogSimples.Nucleo.csproj", "{3BDBE6AE-09D6-40B5-81A7-269BF4E4BF1A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaxpiBlogSimples.Plataforma", "FaxpiBlogSimples.Plataforma\FaxpiBlogSimples.Plataforma.csproj", "{05DBDB00-B4B8-459B-B6ED-E5E8E28527D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaxpiBlogSimples.App", "FaxpiBlogSimples.App\FaxpiBlogSimples.App.csproj", "{5050A7F3-1E94-48FE-9E0D-B5C72E9170D6}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D24975A8-740C-48FA-A9F3-C0963610C627}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{43744D63-7B72-4535-8A0E-9B31DEEF639F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BDBE6AE-09D6-40B5-81A7-269BF4E4BF1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BDBE6AE-09D6-40B5-81A7-269BF4E4BF1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BDBE6AE-09D6-40B5-81A7-269BF4E4BF1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BDBE6AE-09D6-40B5-81A7-269BF4E4BF1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05DBDB00-B4B8-459B-B6ED-E5E8E28527D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05DBDB00-B4B8-459B-B6ED-E5E8E28527D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05DBDB00-B4B8-459B-B6ED-E5E8E28527D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05DBDB00-B4B8-459B-B6ED-E5E8E28527D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5050A7F3-1E94-48FE-9E0D-B5C72E9170D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5050A7F3-1E94-48FE-9E0D-B5C72E9170D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5050A7F3-1E94-48FE-9E0D-B5C72E9170D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5050A7F3-1E94-48FE-9E0D-B5C72E9170D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D24975A8-740C-48FA-A9F3-C0963610C627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D24975A8-740C-48FA-A9F3-C0963610C627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D24975A8-740C-48FA-A9F3-C0963610C627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D24975A8-740C-48FA-A9F3-C0963610C627}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52B64E15-A926-4B22-8019-FA411AAE95F4}
+	EndGlobalSection
+EndGlobal

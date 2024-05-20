@@ -1,0 +1,21 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@model FaxpiBlogSimples.App.Pages.Blog.CriarPostagemModel
+@{
+}
+
+@attribute [Authorize]
+
+
+<form method="post">
+  <div asp-validation-summary="All" class="text-danger"></div>
+  <div>
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" asp-for="Comando.Titulo" />
+  </div>
+  <div>
+    <label for="conteudo">Conteúdo:</label>
+    <textarea id="conteudo" asp-for="Comando.Conteudo"></textarea>
+  </div>
+  <button type="submit">Criar Postagem</button>
+</form>
