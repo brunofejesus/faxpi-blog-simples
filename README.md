@@ -16,7 +16,7 @@ Após terminar, execute em seguida:
     docker-compose up
     
 Isso ira subir o banco de dados postgres e a aplicação web **faxpiblogsimples.app**.
-Para acessar a aplicação utilize a seguinte URL no navegador:http://{Container IP}:8090 ou http://{IP da sua maquina}:5000 , se preferir alterar a porta, acesse o arquivo docker-compose.yml e altere a linha 16.
+Para acessar a aplicação utilize a seguinte URL no navegador: **http://{Container IP}:8090** ou **http://{IP da sua maquina}:5000** , se preferir alterar a porta, acesse o arquivo docker-compose.yml e altere a linha 16.
 
 **Utilizando Visual Studio:**
 
